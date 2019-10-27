@@ -18,13 +18,14 @@ def main():
     
     #counter for pure hash line
     count = 1
-    encodingType = "$6$"
+    #encodingType = "$6$"
     #open file of salts, pass single salt and hash into dictionary attack fuction
     #With statement same as try: f=open('file') finally: f.close()
     with open("salts.txt", "r") as saltListFile:
         for saltStart in enumerate(saltListFile):
             trueHash = trueHashFile.readline(count)
-            saltFull = encodingType + saltStart
+            #saltFull = encodingType + saltStart
+            saltFull = saltStart
             crackAttempt(saltFull, trueHash)
             count += 1
     trueHashFile.close()
