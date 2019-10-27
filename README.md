@@ -26,5 +26,6 @@ It takes the first salt and hash in their respective lists, then puts then in th
 
 To make you look like a cwel h@x0r I output bullshit like, 
 > Attempt number [counter] Password: [dictionary word] is hashed as: [hash]
+
 If you want a clean bash output, then you can comment that out no biggie, but I'll judge you if I ever find out. 
 I also print out the success. But, since I have l33t output being printed at the speed of light, you'll never see it lol
