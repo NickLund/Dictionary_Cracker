@@ -5,8 +5,10 @@ import crypt
 #dictionary attack function
 def crackAttempt(saltFull, trueHash):
     with open("realhuman_phill.txt", "r") as crackerListFile:
-        for attemptWord in enumerate(crackerListFile):
+        count = 1
+        for attemptWord in crackerListFile(count):
             #crypt takes password, then the salt with encoding type, then encrypts it
+            count += 1
             if (trueHash == crypt.crypt(attemptWord,saltFull)):
                 print("Hash: %s has password %s" % (trueHash, attemptWord))
                 break
@@ -18,14 +20,13 @@ def main():
     
     #counter for pure hash line
     count = 1
-    #encodingType = "$6$"
+    encodingType = "$6$"
     #open file of salts, pass single salt and hash into dictionary attack fuction
     #With statement same as try: f=open('file') finally: f.close()
     with open("salts.txt", "r") as saltListFile:
-        for saltStart in enumerate(saltListFile):
+        for saltStart in saltListFile(count):
             trueHash = trueHashFile.readline(count)
-            #saltFull = encodingType + saltStart
-            saltFull = saltStart
+            saltFull = encodingType + saltStart
             crackAttempt(saltFull, trueHash)
             count += 1
     trueHashFile.close()
