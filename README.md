@@ -24,6 +24,7 @@ Make sure that the salts and compare lists are in correct order (first salt goes
 ## Brief Explanation
 It takes the first salt and hash in their respective lists, then puts then in the cracking function. Then it takes the salt, adds it to a line from the provided dictionary into the hash function, and saves it as a string. Then that string gets compared to the imported hash. If they match, then the password and hash are written to a file (`FattyList.txt`). If it doesn't exist, then it creates it. If it does, then it appends to it.
 
-To make you look like a cwel h@x0r I output bullshit like, > Attempt number [counter] Password: [dictionary word] is hashed as: [hash]
+To make you look like a cwel h@x0r I output bullshit like, 
+> Attempt number [counter] Password: [dictionary word] is hashed as: [hash]
 If you want a clean bash output, then you can comment that out no biggie, but I'll judge you if I ever find out. 
 I also print out the success. But, since I have l33t output being printed at the speed of light, you'll never see it lol
