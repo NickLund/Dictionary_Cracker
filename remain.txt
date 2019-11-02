@@ -1,0 +1,3 @@
+hook:$6$O8NfDP1g$Z/WGc8HzK/k2rBwPgU5sCsClklkhpeLwN5FToYjTCiIieQu8.FGccooCE.RExbRSHNVYIW3YATZBEm6ysWRTf1:1004:1004:,,,:/home/hook:/bin/bash
+rumplestiltskin:$6$dzFi5yl9$4a8e5sfIqjdRYwU9K8DzxfPDgMJ5ctFOSxxX.Juz9f.gOsbVMrsNVjyv6rmNr2ePVMoXb43ykbPMu.amt.SEs0:1003:1003:,,,:/home/rumplestiltskin:/bin/bash
+blah:$S$EZHsVwcxgoBLwBCiiUI6Jc145oRYsXECP56Jd1ZUUFpaypDrvGwM
